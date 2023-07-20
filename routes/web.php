@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.pages.index');
 });
+Route::get('/admin', function () {
+    return view('backend.pages.index');
+});
+Route::get('/admin/education', function () {
+    return view('backend.pages.education');
+});

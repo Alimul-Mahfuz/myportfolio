@@ -80,8 +80,10 @@ section:not(:first-child) {
     border-radius: 0px;
 }
 
-.intro{
-    background-image: url("{{ asset('assets/frontend/images/bannerbg.jpg') }}")
+.intro {
+    background-image: url("{{ asset('assets/frontend/images/bannerbg.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card {
     border-radius: 0;
