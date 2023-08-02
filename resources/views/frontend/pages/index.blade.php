@@ -95,44 +95,23 @@
     <!--Education-->
     <section class="education my-5">
         <div class="container">
-            <div class="card w-100 shadow p-3 mb-5 bg-body-tertiary">
+            <div class="card w-100 shadow py-3 px-md-3 mb-5 bg-body-tertiary">
                 <h5 class="card-header px-3 my-2"><img class="section-icon pe-1"
                         src="{{ asset('assets/frontend/images/section-icons/education.png') }}" alt="">Education
                 </h5>
-                <div class="card-body py-0">
-                    <div class="inner-education my-2 d-flex flex-column flex-md-row">
-                        <p class="">January 2023</p>
-                        <div class="education-item">
-                            <div class="edu-details">
-                                <p class="fspx-24">Bachelor of Computer Science and Engieering</p>
-                                <p class="fspx-18 fw-600">American International University-Bangladesh</p>
-                                <p class="">Major: Software Engieering</p>
-                                <p class="">CGPA: 3.82 in scale of 4.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inner-education my-2 d-flex flex-column flex-md-row">
-                        <p class="">January 2023</p>
-                        <div class="education-item">
-                            <div class="edu-details">
-                                <p class="fspx-24">Bachelor of Computer Science and Engieering</p>
-                                <p class="fspx-18 fw-600">American International University-Bangladesh</p>
-                                <p class="">Major: Software Engieering</p>
-                                <p class="">CGPA: 3.82 in scale of 4.00</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-body py-0" id="education_load">
+
                 </div>
             </div>
         </div>
     </section>
     <!--End of Education-->
-    <!--projects and portfolio-->
-    <section class="portfolio my-5">
+    <!--Publications-->
+    <section class="publications my-5">
         <div class="container">
             <div class="card w-100 shadow p-3 mb-5 bg-body-tertiary">
                 <h5 class="card-header px-3 my-2"><img class="section-icon pe-1"
-                        src="{{ asset('assets/frontend/images/section-icons/education.png') }}" alt="">Education
+                        src="{{ asset('assets/frontend/images/section-icons/publication.png') }}" alt="">Publication
                 </h5>
                 <div class="card-body py-0">
                     <div class="inner-education my-2 d-flex flex-column flex-md-row">
@@ -161,5 +140,8 @@
             </div>
         </div>
     </section>
+    @push('js')
+        <script src="{{asset('assets/frontend/scripts/home.js')}}"></script>
+    @endpush
     <!--End of projects and portfolio-->
 </x-user-layout>

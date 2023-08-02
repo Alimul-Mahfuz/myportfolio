@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\EducationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,11 @@ Route::get('/admin', function () {
 Route::get('/admin/education', function () {
     return view('backend.pages.education');
 });
+
+
+Route::post('/admin/add-education',[EducationController::class,'add_education']);
+Route::get('/get-educationsinfo',[EducationController::class,'get_educations']);
+Route::get('/get-getdemo',[EducationController::class,'demoResponse']);
+
+
+

@@ -80,5 +80,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset('assets/backend/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('assets/backend/dist/js/adminlte.min.js')}}"></script>
+@stack('js')
 </body>
 </html>

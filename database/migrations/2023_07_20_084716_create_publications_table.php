@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string("publication_title");
             $table->string("type");
             $table->string("publisher_name");
+            $table->string("city");
+            $table->string("country");
             $table->string("publication_date");
             $table->string("abastract")->nullable();
             $table->string("doi")->nullable();

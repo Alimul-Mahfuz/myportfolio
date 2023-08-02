@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("degree_name");
             $table->string("institute_name");
             $table->string("passing_year");
+            $table->string("passing_month");
             $table->string("major")->nullable();
             $table->string("minor")->nullable();
             $table->double("cgpa");
